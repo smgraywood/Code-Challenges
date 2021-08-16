@@ -1,0 +1,15 @@
+function longer(string1,string2){
+  if(string1.length > string2.length){
+    return (string1 + " is longer than " + string2 + ".");
+  }
+  else if(string2.length > string1.length){
+  return (string2 + " is longer than " + string1 + ".");    
+  }
+  else{
+    return "These words are the same length!"
+  }
+}
+
+console.log(longer("cat", "kitten"))//should return "kitten is longer than cat."
+console.log(longer("dance", "dance"))//should return"These words are the same length!"
+console.log(longer("hermosura", "cachet"))//should return "hermosura is longer than cachet."
