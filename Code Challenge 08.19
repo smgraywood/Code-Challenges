@@ -1,0 +1,16 @@
+function squirrel_play(temp, is_summer){
+  if (is_summer === false && temp >= 60 && temp <= 90){
+    return true
+  } 
+  if (is_summer === true && temp >= 60 && temp <= 100){
+    return true
+  }
+  else{
+    return false
+  }
+}
+  console.log(squirrel_play(70, false));//→ true
+  console.log(squirrel_play(95, false));//→ false
+  console.log(squirrel_play(95, true));//→ true
+  console.log(squirrel_play(60, true));//→ true
+    console.log(squirrel_play(100, true));//→ true
