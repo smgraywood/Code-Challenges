@@ -1,9 +1,9 @@
 function squirrel_play(temp, is_summer){
   if (is_summer !== true && is_summer !== false){
-    return "Please tell me if its summer with all lowercase letters!"
+    return "Please tell me, is it summer? Please type in true or false."
   }
   if (typeof temp !== "number"){
-    return "I need a number for our temperature in Farenheit!"
+    return "I need a number for our temp!"
   }
   if (is_summer === false && temp >= 60 && temp <= 90){
     return true
