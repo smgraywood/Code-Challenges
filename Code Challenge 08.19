@@ -1,4 +1,10 @@
 function squirrel_play(temp, is_summer){
+  if (is_summer !== true && is_summer !== false){
+    return "Please tell me if its summer with all lowercase letters!"
+  }
+  if (typeof temp !== "number"){
+    return "I need a number for our temperature in Farenheit!"
+  }
   if (is_summer === false && temp >= 60 && temp <= 90){
     return true
   } 
@@ -9,6 +15,8 @@ function squirrel_play(temp, is_summer){
     return false
   }
 }
+  console.log(squirrel_play(70, "False"))// → "Please tell me if its summer with all lowercase letters!"
+  console.log(squirrel_play("a", false))// → "Please tell me if its summer with all lowercase letters!"
   console.log(squirrel_play(70, false));//→ true
   console.log(squirrel_play(95, false));//→ false
   console.log(squirrel_play(95, true));//→ true
